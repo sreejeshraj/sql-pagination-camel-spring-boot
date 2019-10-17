@@ -45,7 +45,7 @@ public class CamelDemoRoute extends RouteBuilder {
 		*/
 						
 		from("timer://dbQueryTimer?period=10s&repeatCount=1")
-		.routeId("DATABASE_QUERY_TIMER_ROUTE")
+		.routeId("SqlPaginationRoute")
 		//.setBody(new ParameterMapSupplier())
 		//.to("sql:SELECT version()?dataSource=#dataSource")	
 		//.to("sql:SELECT name FROM person WHERE id=:#id?dataSource=#dataSource")
